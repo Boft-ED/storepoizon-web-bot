@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Button/Button"
 import { useTelegram } from "../../hooks/useTelegram";
 
-const Header = (props) => {
+const Header = () => {
 
     const { tg, user, onClose } = useTelegram();
 
