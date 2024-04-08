@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import './ProductList.css'
+import './ProductList.scss'
 import ProductItem from '../ProductItem/ProductItem';
 import { useTelegram } from "../../hooks/useTelegram";
 
