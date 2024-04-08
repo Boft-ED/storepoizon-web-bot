@@ -14,7 +14,7 @@ const Header = () => {
             <div className="header__content">
                 <div className="header__username">
                     <span>
-                        {user?.name}
+                        {user?.first_name}
                         Колбаска
                     </span>
                 </div>
