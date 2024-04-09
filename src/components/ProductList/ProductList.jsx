@@ -70,15 +70,21 @@ const ProductList = () => {
     }
 
     return (
-        <div className={'list'}>
-            {products.map(item => (
-                <ProductItem
-                    product={item}
-                    onAdd={onAdd}
-                    className={'item'}
-                />
-            ))}
+        <div className="list">
+            <div className="list__title">
+                <h2>Рекомендации для Вас</h2>
+            </div>
+            <div className={'list__content'}>
+                {products.map(item => (
+                    <ProductItem
+                        product={item}
+                        onAdd={onAdd}
+                        className={'item'}
+                    />
+                ))}
+            </div>
         </div>
+
     );
 };
 

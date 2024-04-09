@@ -15,7 +15,6 @@ const Header = () => {
                 <div className="header__username">
                     <span>
                         {user?.first_name}
-                        Колбаска
                     </span>
                 </div>
                 <div className="header__burger">
