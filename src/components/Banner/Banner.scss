@@ -1,0 +1,88 @@
+.banner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-family: "Roboto-Medium";
+        font-weight: 500;
+    }
+
+    &__link {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+    &__item {
+        border-radius: 10px;
+        background-color: #EAEAEA;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__img {
+        flex: 60%;
+        text-align: center;
+
+        img {
+            width: 160px;
+            height: auto;
+        }
+    }
+
+    &__info {
+        flex: 40%;
+    }
+}
+
+.banner-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__price {
+        font-size: 18px;
+        font-family: "Roboto-Medium";
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+        .old-price {
+            margin-left: 5px;
+            color: #df2828;
+            font-size: 12px !important;
+        }
+    }
+
+    &__name {
+        font-family: "Roboto-Medium";
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    &__descr {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+}
+
+.swiper-pagination-bullet {
+    border-radius: 10% !important;
+    width: 15px !important;
+    height: 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px !important;
+    background-color: #000 !important;
+}

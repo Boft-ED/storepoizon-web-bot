@@ -4,6 +4,7 @@ import { useTelegram } from './hooks/useTelegram';
 import Header from './components/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList/ProductList';
+import Banner from './components/Banner/Banner';
 import Form from './components/Form/Form';
 
 function App() {
@@ -17,10 +18,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
+      <Banner />
+      <ProductList />
+      {/* <Routes>
         <Route index element={<ProductList />} />
         <Route path={'form'} element={<Form />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

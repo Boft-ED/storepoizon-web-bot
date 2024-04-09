@@ -3,7 +3,11 @@
     height: 50px;
 
 
-    &__username {}
+    &__username {
+        span {
+            font-size: 24px;
+        }
+    }
 
     &__burger {}
 

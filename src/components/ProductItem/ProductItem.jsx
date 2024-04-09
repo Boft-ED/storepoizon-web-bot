@@ -2,6 +2,8 @@ import React from 'react';
 import Button from "../Button/Button";
 import './ProductItem.scss';
 
+import Image from '../../assets/images/kross.png';
+
 const ProductItem = ({ product, className, onAdd }) => {
 
     const onAddHandler = () => {
@@ -10,16 +12,18 @@ const ProductItem = ({ product, className, onAdd }) => {
 
     return (
         <div className={'product ' + className}>
-            <div className={'img'} />
-            <div className={'title'}>{product.title}</div>
-            <div className={'description'}>{product.description}</div>
-            <div className={'price'}>
-                <span>Стоимость: <b>{product.price}</b></span>
+            <div className="product__img">
+                <img src={Image} />
             </div>
-            <Button className={'add-btn'} onClick={onAddHandler}>
-                Добавить в корзину
-            </Button>
-        </div>
+            <div className={'product__price'}>
+                <span>{product.price} ₽</span>
+            </div>
+            <div className={'product__title'}>{product.title}</div>
+            <div className={'product__description'}>{product.description}</div>
+            {/* <Button className={'product__add-btn'} onClick={onAddHandler}>
+                В корзину
+            </Button> */}
+        </div >
     );
 };
 

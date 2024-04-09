@@ -1,6 +1,21 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("./assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("./assets/fonts/Roboto/Roboto-Medium.ttf");
 }
 
 * {
@@ -10,8 +25,7 @@
 }
 
 body {
-    padding: 10px;
+    padding: 30px 10px;
     background: #fff;
-    font-family: "Montserrat";
-    font-weight: 600;
+    font-family: "Roboto-Light";
 }

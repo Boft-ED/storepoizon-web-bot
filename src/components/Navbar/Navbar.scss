@@ -17,12 +17,12 @@
     justify-content: center;
     position: fixed;
     top: 0px;
-    left: -100%;
+    right: -100%;
     transition: 850ms;
 }
 
 .nav-menu.active {
-    left: 0%;
+    right: 0%;
     transform: 350ms;
 }
 
@@ -62,8 +62,4 @@
     display: flex;
     justify-content: end;
     align-items: center;
-}
-
-span {
-    margin-left: 16px;
 }
