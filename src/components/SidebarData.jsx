@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import * as AiIcons from "react-icons/ai";
+import { ROUTES } from "../utils/router";
 
 export const SidebarData = [
     {
         title: "Главная",
-        path: "/",
+        path: ROUTES.HOME,
         icon: <AiIcons.AiFillHome />,
         chName: "nav-text",
     },
@@ -22,7 +23,7 @@ export const SidebarData = [
     },
     {
         title: "FAQ",
-        path: "/faq",
+        path: ROUTES.CATALOG,
         icon: <AiIcons.AiFillHome />,
         chName: "nav-text",
     },

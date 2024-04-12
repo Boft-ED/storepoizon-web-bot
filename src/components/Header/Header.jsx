@@ -16,6 +16,7 @@ const Header = () => {
                     <span>
                         {user?.first_name}
                     </span>
+
                 </div>
                 <div className="header__burger">
                     <Navbar />

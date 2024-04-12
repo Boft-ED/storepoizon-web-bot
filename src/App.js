@@ -1,30 +1,24 @@
-import { useEffect } from 'react';
 import './App.scss';
-import { useTelegram } from './hooks/useTelegram';
 import Header from './components/Header/Header';
-import { Route, Routes } from 'react-router-dom';
-import ProductList from './components/ProductList/ProductList';
-import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
+import AppRoutes from './components/Routes/Routes';
+
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getCategories } from './features/categories/categoriesSlice';
 
 function App() {
-
-  const { onToggleButton, tg } = useTelegram();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    tg.ready();
-  }, [])
+    dispatch(getCategories());
+  }, [dispatch]);
 
   return (
     <div className="App">
       <Header />
-      <Banner />
-      <ProductList />
+      <AppRoutes />
       <Footer />
-      {/* <Routes>
-        <Route index element={<ProductList />} />
-        <Route path={'form'} element={<Form />} />
-      </Routes> */}
     </div>
   );
 }
